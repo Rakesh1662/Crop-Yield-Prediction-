@@ -1,0 +1,44 @@
+	{% load static %}
+<!DOCTYPE html>
+
+<html lang="">
+<!-- To declare your language - read more here: https://www.w3.org/International/questions/qa-html-language-declarations -->
+<head>
+<title>Crop Yield Prediction</title>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+<link href="{% static 'layout/styles/layout.css' %}" rel="stylesheet" type="text/css" media="all">
+</head>
+<style>
+ body{
+     background: url("/static/images/img.jpg") 50% 0 no-repeat fixed;
+     color: white;
+     height: 650px;
+     padding: 20px 0 0 0;   
+     }
+	
+</style>
+<body id="top">
+
+
+
+<div>
+<nav style='background-color:Olive;'>
+
+
+  <button style="float:right;background-color:#26619c;padding:10px;margin-right:200px;"><a href="{% url 'home'  %}" style="text-align: right;">CROP YIELD </a></button>
+
+
+ 
+</nav>
+</div>
+
+
+
+<a id="backtotop" href="#top"><i class="fas fa-chevron-up"></i></a>
+<!-- JAVASCRIPTS -->
+<script src="{% static 'layout/scripts/jquery.min.js' %}"></script>
+<script src="{% static 'layout/scripts/jquery.backtotop.js' %}"></script>
+<script src="{% static 'layout/scripts/jquery.mobilemenu.js' %}"></script>
+</body>
+</html>
